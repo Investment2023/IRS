@@ -96,7 +96,7 @@
         <div class="pt-2">
           <button type="submit"
                   class="w-full bg-emerald-500 hover:bg-emerald-600 active:bg-emerald-700 text-white font-semibold py-4 rounded-2xl text-lg transition-all flex items-center justify-center gap-2">
-            <span>Create Free Demo Account</span>
+            <span>Create Live Account</span>
             <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
@@ -110,13 +110,13 @@
       </form>
 
       <div class="mt-6 text-center">
-        <p class="text-xs text-slate-500">This is a simulation only — no real funds or trading occurs.<br>Demo data is stored in your browser.</p>
+        <p class="text-xs text-slate-500">This are real funds with live markets.<br>Your data is stored at our server.</p>
       </div>
     </div>
 
     <div class="flex justify-center mt-6 text-xs text-slate-500 items-center gap-2">
       <i class="fa-solid fa-lock"></i>
-      <span>256-bit encrypted • Secure demo environment</span>
+      <span>256-bit encrypted • Secure environment</span>
     </div>
   </div>
 
@@ -159,8 +159,8 @@
       document.getElementById('loginForm').classList.add('hidden');
       document.getElementById('registerForm').classList.remove('hidden');
       
-      document.getElementById('authTitle').textContent = 'Create your demo account';
-      document.getElementById('authSubtitle').textContent = 'Start with R5,000 virtual capital. No real money required.';
+      document.getElementById('authTitle').textContent = 'Create your live account';
+      document.getElementById('authSubtitle').textContent = 'Start with R1,000 capital and start earning right away.';
     }
 
     function switchToLogin() {
@@ -189,7 +189,7 @@
         // For demo: show hint
         const hint = document.createElement('p');
         hint.className = 'text-xs text-red-400 mt-2 text-center';
-        hint.textContent = 'Demo hint: Use the password you created during registration';
+        hint.textContent = 'hint: Use the password you created during registration';
         const form = document.getElementById('loginForm');
         if (!form.querySelector('.text-red-400')) {
           form.appendChild(hint);
